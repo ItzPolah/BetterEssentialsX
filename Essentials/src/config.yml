@@ -20,10 +20,10 @@
 ############################################################
 
 # A color code between 0-9 or a-f. Set to 'none' to disable.
-ops-name-color: '4'
+ops-name-color: ''
 
 # The character(s) to prefix all nicknames, so that you know they are not true usernames.
-nickname-prefix: '~'
+nickname-prefix: ''
 
 # The maximum length allowed in nicknames. The nickname prefix is included in this.
 max-nick-length: 15
@@ -31,9 +31,9 @@ max-nick-length: 15
 # Disable this if you have any other plugin, that modifies the displayname of a user.
 change-displayname: true
 
-# When this option is enabled, the (tab) player list will be updated with the displayname.
-# The value of change-displayname (above) has to be true.
-#change-playerlist: true
+#When this option is enabled, the (tab) player list will be updated with the displayname.
+#The value of change-displayname (above) has to be true.
+change-playerlist: true
 
 # When EssentialsChat.jar isn't used, force essentials to add the prefix and suffix from permission plugins to displayname.
 # This setting is ignored if EssentialsChat.jar is used, and defaults to 'true'.
@@ -264,14 +264,14 @@ kits:
 # Color is not an actual sign, it's for enabling using color codes on signs, when the correct permissions are given.
 
 enabledSigns:
-  #- color
+  - color
   #- balance
   #- buy
   #- sell
   #- trade
   #- free
-  #- disposal
-  #- warp
+  - disposal
+  - warp
   #- kit
   #- mail
   #- enchant
@@ -529,7 +529,7 @@ chat:
   # Or you can give a group specific chat format, to give some extra variation.
   # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
 
-  format: '<{DISPLAYNAME}> {MESSAGE}'
+  format: '&7{DISPLAYNAME} &8» &r{MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
 
   group-formats:
@@ -715,7 +715,7 @@ newbies:
   # If so, use this format, replacing {DISPLAYNAME} with the player name.
   # If not, set to ''
   #announce-format: ''
-  announce-format: '&dWelcome {DISPLAYNAME}&d to the server!'
+  announce-format: '&8» &aWelcome &r&b{DISPLAYNAME} &r&ato the Server!'
 
   # When we spawn for the first time, which spawnpoint do we use?
   # Set to "none" if you want to use the spawn point of the world.
