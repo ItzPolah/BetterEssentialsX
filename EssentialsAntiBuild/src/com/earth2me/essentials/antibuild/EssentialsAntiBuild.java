@@ -18,7 +18,7 @@ public class EssentialsAntiBuild extends JavaPlugin implements IAntiBuild
 	public void onEnable()
 	{
 		final PluginManager pm = this.getServer().getPluginManager();
-		final Plugin essPlugin = pm.getPlugin("Essentials");
+		final Plugin essPlugin = pm.getPlugin("EssentialsX");
 		if (essPlugin == null || !essPlugin.isEnabled())
 		{
 			return;
